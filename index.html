@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose R. Ruda - Supply Chain Manager</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+        }
+        .card {
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .profile-img {
+            border: 4px solid white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .pi-scale {
+            height: 40px;
+            border-bottom: 1px solid #e5e7eb;
+            position: relative;
+        }
+        .pi-marker {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 12px solid #1e40af;
+        }
+        .pi-point {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 2px solid #3b82f6;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #3b82f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header Section -->
+    <header class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center md:items-start justify-between">
+                <div class="flex flex-col md:flex-row items-center md:items-start mb-8 md:mb-0">
+                    <img src="images/profile.jpg" alt="Jose R. Ruda" class="w-48 h-48 rounded-full profile-img mb-6 md:mb-0 md:mr-8">
+                    <div class="text-center md:text-left">
+                        <h1 class="text-4xl font-bold mb-2">Jose R. Ruda</h1>
+                        <h2 class="text-xl mb-4">Senior Supply Chain Manager</h2>
+                        <p class="text-lg">GBA Logistics | Barcelona, Spain</p>
+                    </div>
+                </div>
+                <div class="flex space-x-4">
+                    <img src="images/python-icon.png" alt="Python" class="w-12 h-12 bg-white rounded-full p-2">
+                    <img src="images/sql-icon.png" alt="SQL" class="w-12 h-12 bg-white rounded-full p-2">
+                    <img src="images/excel-icon.png" alt="Excel" class="w-12 h-12 bg-white rounded-full p-2">
+                    <img src="images/powerbi-icon.png" alt="Power BI" class="w-12 h-12 bg-white rounded-full p-2">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Highlights -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Portfolio Highlights</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="font-bold mb-2">Data Manipulation with pandas</h3>
+                    <p class="text-gray-600">Advanced data analysis and manipulation techniques</p>
+                </div>
+                <div class="card bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="font-bold mb-2">Intermediate SQL</h3>
+                    <p class="text-gray-600">Database management and complex queries</p>
+                </div>
+                <div class="card bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="font-bold mb-2">Data Analysis in Excel</h3>
+                    <p class="text-gray-600">Advanced Excel techniques for business analytics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Work Experience</h2>
+            
+            <!-- Outlier.ai Role -->
+            <div class="card bg-white rounded-lg shadow-lg p-6 mb-6">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold">LLM Trainer (Contractor)</h3>
+                    <span class="text-gray-600">Nov 2024 - Present</span>
+                </div>
+                <h4 class="text-lg font-semibold mb-2">Outlier.ai</h4>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Specialize in training large language models (LLMs) using High-Resolution Language Modeling (HRLM) methodologies</li>
+                    <li>Focus on the Spanish language, ensuring linguistic accuracy, cultural relevance, and contextual appropriateness</li>
+                    <li>Collaborate with AI teams to refine data pipelines, enhance model outputs, and align with project objectives</li>
+                    <li>Contribute to the development of robust AI systems by applying advanced linguistic and machine learning techniques</li>
+                </ul>
+            </div>
+
+            <!-- GBA Logistics -->
+            <div class="card bg-white rounded-lg shadow-lg p-6 mb-6">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold">Senior Supply Chain Manager</h3>
+                    <span class="text-gray-600">Oct 2023 - Present</span>
+                </div>
+                <h4 class="text-lg font-semibold mb-2">GBA Logistics</h4>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Leading the supply chain department for one of the largest UK-based logistics companies</li>
+                    <li>Overseeing a sales pipeline of over £78M</li>
+                    <li>Managing 6 direct reports across Spain, Poland, and the United Kingdom</li>
+                    <li>Implemented a new RFQ Management process using Power Automate flows</li>
+                    <li>Designed and deployed Supply Chain dashboards using Power BI</li>
+                </ul>
+            </div>
+
+            <!-- Coyote Logistics -->
+            <div class="card bg-white rounded-lg shadow-lg p-6 mb-6">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold">Manager, Carrier Sales West & Southern EU</h3>
+                    <span class="text-gray-600">Jun 2021 - Oct 2023</span>
+                </div>
+                <h4 class="text-lg font-semibold mb-2">Coyote Logistics</h4>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Led the Carrier Sales department for Coyote's West Conference</li>
+                    <li>Managed a sales team of 12, onboarding over 3.2M in business in 2022</li>
+                    <li>Developed Tableau reporting to track sales performance</li>
+                    <li>Collaborated with IT to create an MS Planner environment for streamlined freight procurement</li>
+                </ul>
+            </div>
+
+            <!-- Previous Roles -->
+            <div class="space-y-6">
+                <div class="card bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold">Earlier Positions</h3>
+                    </div>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Carrier Team Lead at Coyote Logistics Europe (2017-2021)</li>
+                        <li>Tennis Professional at Riverside Yacht Club (2013-2016)</li>
+                        <li>Programmer at Belsa Technologies Industrials S.L. (2011)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Profile Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Leadership Profile</h2>
+            
+            <!-- PI Assessment Visualization -->
+            <div class="card bg-white rounded-lg shadow-lg p-6 mb-8">
+                <h3 class="text-xl font-bold mb-6">Predictive Index Assessment Results</h3>
+                
+                <!-- Self -->
+                <div class="mb-8">
+                    <h4 class="font-semibold text-blue-600 mb-4">Self</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-sm text-gray-600 mb-1">
+                                <span>Collaborative</span>
+                                <span>Independent</span>
+                            </div>
+                            <div class="pi-scale">
+                                <div class="pi-point" style="left: 40%">A</div>
+                                <div class="pi-point" style="left: 60%">B</div>
+                                <div class="pi-point" style="left: 40%">C</div>
+                                <div class="pi-point" style="left: 70%">D</div>
+                                <div class="pi-marker" style="left: 50%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm text-gray-600 mb-1">
+                                <span>Reserved</span>
+                                <span>Sociable</span>
+                            </div>
+                            <div class="pi-scale">
+                                <div class="pi-marker" style="left: 50%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm text-gray-600 mb-1">
+                                <span>Driving</span>
+                                <span>Steady</span>
+                            </div>
+                            <div class="pi-scale">
+                                <div class="pi-marker" style="left: 50%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm text-gray-600 mb-1">
+                                <span>Flexible</span>
+                                <span>Precise</span>
+                            </div>
+                            <div class="pi-scale">
+                                <div class="pi-marker" style="left: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Profile Overview -->
+                <div class="card bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-4">Professional Style</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold text-blue-600">Altruist Leadership Style</h4>
+                            <p class="text-gray-700">Congenial and cooperative professional with an efficient, precise work ethic. Combines thorough attention to detail with strong interpersonal skills.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-blue-600">Core Strengths</h4>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                                <li>Detail-oriented and thorough in ensuring high-quality outcomes</li>
+                                <li>Strong communicator who builds trusted relationships</li>
+                                <li>Proactive team player focused on operational excellence</li>
+                                <li>Careful and precise in following established procedures</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Management Approach -->
+                <div class="card bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-4">Management Approach</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold text-blue-600">Team Leadership</h4>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                                <li>Enthusiastic coach who develops and motivates team members</li>
+                                <li>Collaborative leader who values input while maintaining high standards</li>
+                                <li>Builds positive, productive work environments</li>
+                                <li>Ensures clear communication of goals and expectations</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-blue-600">Work Style</h4>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                                <li>Drives operational efficiency while maintaining quality</li>
+                                <li>Takes pride in delivering precise, reliable results</li>
+                                <li>Adaptable to change while ensuring procedural excellence</li>
+                                <li>Builds strong relationships across all organizational levels</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Jose R. Ruda. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
