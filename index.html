@@ -25,12 +25,12 @@
             border: 4px solid #374151;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
         }
-        .pi-scale {
+        .assessment-scale {
             height: 40px;
             border-bottom: 1px solid #4b5563;
             position: relative;
         }
-        .pi-marker {
+        .scale-marker {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -40,7 +40,7 @@
             border-right: 8px solid transparent;
             border-top: 12px solid #3b82f6;
         }
-        .pi-point {
+        .scale-point {
             position: absolute;
             top: 50%;
             transform: translate(-50%, -50%);
@@ -61,7 +61,7 @@
     <!-- Header Section -->
     <header class="gradient-bg text-white py-16">
         <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center md:items-start justify-between">
+            <div class="flex flex-col md:flex-row items-center md:items-start">
                 <div class="flex flex-col md:flex-row items-center md:items-start mb-8 md:mb-0">
                     <img src="/joseruda.com/images/Profile_Pic.png" alt="Jose R. Ruda" class="w-48 h-48 rounded-full profile-img mb-6 md:mb-0 md:mr-8">
                     <div class="text-center md:text-left">
@@ -131,46 +131,104 @@
                 </ul>
             </div>
 
-            <!-- Previous roles section remains the same with updated styling -->
+            <!-- Previous roles -->
+            <div class="card bg-gray-800 rounded-lg shadow-lg p-6">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold">Earlier Positions</h3>
+                </div>
+                <ul class="list-disc pl-5 space-y-2 text-gray-300">
+                    <li>Carrier Team Lead at Coyote Logistics Europe (2017-2021)</li>
+                    <li>Tennis Professional at Riverside Yacht Club (2013-2016)</li>
+                    <li>Programmer at Belsa Technologies Industrials S.L. (2011)</li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <!-- Leadership Profile Section -->
-    <section class="py-12 bg-gray-800">
+    <!-- Leadership Profile -->
+    <section class="py-12 bg-gray-900">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold mb-8 text-white">Leadership Profile</h2>
             
-            <!-- PI Assessment Visualization -->
-            <div class="card bg-gray-900 rounded-lg shadow-lg p-6 mb-8">
-                <h3 class="text-xl font-bold mb-6">Predictive Index Assessment Results</h3>
-                
-                <!-- Self -->
-                <div class="mb-8">
-                    <h4 class="font-semibold text-blue-400 mb-4">Self</h4>
-                    <div class="space-y-4">
-                        <!-- PI Scale contents remain the same with updated styling -->
+            <!-- Behavioral Assessment -->
+            <div class="card bg-gray-800 rounded-lg p-6 mb-8">
+                <h3 class="text-xl font-bold mb-6">Behavioral Assessment Results</h3>
+                <div class="space-y-8">
+                    {/* Assessment scales */}
+                    <div class="flex justify-between text-sm mb-2">
+                        <span class="text-blue-400">Collaborative</span>
+                        <span class="text-blue-400">Independent</span>
                     </div>
+                    <div class="relative h-12">
+                        <div class="absolute w-full h-2 bg-gray-700 top-5 rounded-full"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 top-6">
+                            <div class="w-0 h-0 border-l-8 border-r-8 border-t-8 border-t-blue-500 border-l-transparent border-r-transparent"></div>
+                        </div>
+                        <svg class="absolute top-0 left-0 w-full h-full">
+                            <path
+                                d="M 50% 50% L 65% 50% M 50% 50% L 35% 50% L 80% 50%"
+                                stroke="#3b82f6"
+                                stroke-width="2"
+                                fill="none"
+                            />
+                            <circle cx="50%" cy="50%" r="6" fill="#1f2937" stroke="#3b82f6" stroke-width="2"/>
+                            <circle cx="65%" cy="50%" r="6" fill="#1f2937" stroke="#3b82f6" stroke-width="2"/>
+                            <circle cx="35%" cy="50%" r="6" fill="#1f2937" stroke="#3b82f6" stroke-width="2"/>
+                            <circle cx="80%" cy="50%" r="6" fill="#1f2937" stroke="#3b82f6" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <!-- Repeat for other scales -->
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Profile Overview -->
-                <div class="card bg-gray-900 rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-bold mb-4">Professional Style</h3>
-                    <div class="space-y-4">
-                        <div>
-                            <h4 class="font-semibold text-blue-400">Altruist Leadership Style</h4>
-                            <p class="text-gray-300">Congenial and cooperative professional with an efficient, precise work ethic. Combines thorough attention to detail with strong interpersonal skills.</p>
-                        </div>
-                        <!-- Rest of profile overview remains the same with updated styling -->
-                    </div>
-                </div>
+            <!-- Strongest Behaviors -->
+            <div class="card bg-gray-800 rounded-lg p-6 mb-8">
+                <h3 class="text-xl font-bold mb-4">Strongest Behaviors</h3>
+                <ul class="space-y-3 text-gray-300">
+                    <li>• Driven to protect the company against risk by thoroughly leveraging their background and strictly following "the book."</li>
+                    <li>• Detail-oriented and accommodating; most comfortable working as part of a well-defined team for which they produce high-quality output and decisions.</li>
+                    <li>• Careful with rules; precise, "by the book", fast-paced, and literal in interpreting rules, schedules and results.</li>
+                    <li>• Detail-oriented and thorough; works to ensure things don't fall through the cracks, and follows up to ensure they're done properly and on time.</li>
+                    <li>• Driven to achieve operational efficiencies: thinks about what needs to be done and how it can be done as fast as possible while maintaining a high-quality outcome.</li>
+                </ul>
+            </div>
 
-                <!-- Management Approach -->
-                <div class="card bg-gray-900 rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-bold mb-4">Management Approach</h3>
-                    <!-- Management approach content remains the same with updated styling -->
-                </div>
+            <!-- Management Style -->
+            <div class="card bg-gray-800 rounded-lg p-6 mb-8">
+                <h3 class="text-xl font-bold mb-4">Management Style</h3>
+                <ul class="space-y-3 text-gray-300">
+                    <li>• Proactive in bringing the team together to complete work by "the book," within accepted standards and policies, and on-time</li>
+                    <li>• An enthusiastic, outgoing team player; motivated to work with and through others to achieve the company's goals</li>
+                    <li>• Cautious when delegating; takes pride in the work and is anxious to do things right</li>
+                    <li>• Collaborative in approach; eager to gather input from others, whose viewpoints are valued</li>
+                    <li>• Keenly interested in the development of others; is an enthusiastic coach or trainer</li>
+                    <li>• Respectful of authority and considerate of others; focus is on the job at hand</li>
+                </ul>
+            </div>
+
+            <!-- Selling Style -->
+            <div class="card bg-gray-800 rounded-lg p-6 mb-8">
+                <h3 class="text-xl font-bold mb-4">Selling Style</h3>
+                <ul class="space-y-3 text-gray-300">
+                    <li>• Convivial and persuasive; will utilize effective and stimulating style to build solid, trusted relationships</li>
+                    <li>• Composed and thorough when representing products where they are a consummate expert</li>
+                    <li>• Warm and sincere with customers; eager to understand their needs and help them</li>
+                    <li>• Comfortable and confident with proven, well-known techniques</li>
+                    <li>• Generally liked and trusted by clients in repeated contact</li>
+                </ul>
+            </div>
+
+            <!-- Management Strategies -->
+            <div class="card bg-gray-800 rounded-lg p-6">
+                <h3 class="text-xl font-bold mb-4">Management Strategies</h3>
+                <ul class="space-y-3 text-gray-300">
+                    <li>• Clear, specific description of the job, with duties, responsibilities, and organizational relationships clearly defined</li>
+                    <li>• Opportunities to learn everything that's needed to know about the job</li>
+                    <li>• The support and help of management, subject-matter experts, or trusted advisors when working outside their area of expertise</li>
+                    <li>• Freedom from repetition</li>
+                    <li>• General assurance of security, respect, and appreciation of the work</li>
+                    <li>• Opportunities for interaction with people</li>
+                </ul>
             </div>
         </div>
     </section>
