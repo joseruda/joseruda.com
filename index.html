@@ -44,30 +44,44 @@
 <body>
     <div class="min-h-screen bg-slate-50">
         <!-- Hero Section -->
-        <div class="gradient-bg py-16">
-            <div class="container mx-auto px-4">
-                <div class="flex flex-col md:flex-row items-center md:items-start">
-                    <div class="relative mb-8 md:mb-0 md:mr-8">
-                        <div class="w-64 h-64 rounded-full bg-white/10 backdrop-blur-sm p-2">
-                            <img 
-                                src="images/profile_pic_2_headshot.jpg"
-                                alt="Jose R. Ruda"
-                                class="w-full h-full rounded-full object-cover transition-transform duration-300 hover:scale-105"
-                            />
-                        </div>
-                    </div>
-                    <div class="text-center md:text-left">
-                        <h1 class="text-4xl font-bold mb-2 text-white">Jose R. Ruda</h1>
-                        <h2 class="text-xl mb-4 text-blue-100">Senior Supply Chain Manager</h2>
-                        <div class="text-blue-100">
-                            GBA Logistics | Barcelona, Spain<br>
-                            soloruda@gmail.com<br>
-                            +34 665 084 948
-                        </div>
-                    </div>
+<div class="gradient-bg py-16">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center md:items-start">
+            <div class="relative mb-8 md:mb-0 md:mr-8">
+                <div class="w-64 h-64 rounded-full bg-white/10 backdrop-blur-sm p-2">
+                    <img 
+                        src="images/profile_pic_2_headshot.jpg"
+                        alt="Jose R. Ruda"
+                        class="w-full h-full rounded-full object-cover transition-transform duration-300 hover:scale-105"
+                    />
+                </div>
+            </div>
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl font-bold mb-2 text-white">Jose R. Ruda</h1>
+                <h2 class="text-xl mb-4 text-blue-100">Senior Supply Chain Manager</h2>
+                <div class="text-blue-100">
+                    GBA Logistics | Barcelona, Spain<br>
+                    soloruda@gmail.com<br>
+                    +34 665 084 948<br>
+                    <a href="https://www.linkedin.com/in/jose-r-ruda-447b712a/" 
+                       class="text-blue-100 hover:text-white transition-colors duration-300"
+                       target="_blank"
+                       rel="noopener noreferrer">LinkedIn</a><br>
+                       <a href="https://www.datacamp.com/portfolio/joseruda" 
+                       class="text-blue-100 hover:text-white transition-colors duration-300"
+                       target="_blank"
+                       rel="noopener noreferrer">DataCamp Portfolio</a>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+<style>
+.gradient-bg {
+    background: linear-gradient(90deg, #1a237e 0%, #0d47a1 100%);
+}
+</style>
 <!-- New Headline Section -->
 <div class="py-8 bg-white border-b border-slate-200">
     <div class="container mx-auto px-4">
@@ -134,56 +148,99 @@
             </div>
         </div>
 
-        <!-- Work Experience -->
-        <div class="py-12 bg-slate-50">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold mb-8 text-slate-800">Work Experience</h2>
+<!-- Work Experience -->
+<div class="py-12 bg-slate-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8 text-slate-800">Work Experience</h2>
+        
+        <!-- LLM Trainer Position -->
+        <div class="mb-6">
+            <div class="bg-white border border-slate-200 rounded-lg shadow-sm p-6 transition-all duration-300 hover:shadow-lg hover:border-blue-500">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold text-slate-700">LLM Trainer (Contractor)</h3>
+                    <span class="text-blue-600">Nov 2024 - Present</span>
+                </div>
+                <h4 class="text-lg font-semibold mb-2 text-slate-600">Outlier.ai</h4>
+                <ul class="list-disc pl-5 space-y-2 text-slate-600">
+                    <li>Lead Spanish language model training initiatives using Reinforcement Learning from Human Feedback (RLHF), ensuring high-quality outputs and cultural relevance</li>
+                    <li>Develop and refine training datasets to improve model performance across diverse use cases and linguistic contexts</li>
+                    <li>Collaborate with AI engineering teams to optimize data pipelines and enhance model accuracy</li>
+                    <li>Contribute to the development of evaluation metrics and quality assurance processes for multilingual AI systems</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- GBA Logistics Position -->
+        <div class="mb-6">
+            <div class="bg-white border border-slate-200 rounded-lg shadow-sm p-6 transition-all duration-300 hover:shadow-lg hover:border-blue-500">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold text-slate-700">Senior Supply Chain Manager</h3>
+                    <span class="text-blue-600">Oct 2023 - Present</span>
+                </div>
+                <h4 class="text-lg font-semibold mb-2 text-slate-600">GBA Logistics</h4>
+                <ul class="list-disc pl-5 space-y-2 text-slate-600">
+                    <li>Spearheading the supply chain operations for one of the UK's largest logistics providers, managing a robust sales pipeline exceeding £78M annually</li>
+                    <li>Designed and implemented an end-to-end RFQ management system utilizing Power Automate, resulting in 40% faster response times and improved bid accuracy</li>
+                    <li>Leading a diverse international team of 6 professionals across Spain, Poland, and the United Kingdom, fostering cross-cultural collaboration and operational excellence</li>
+                    <li>Developed comprehensive supply chain analytics dashboards using Power BI, enabling data-driven decision making and providing real-time visibility into key performance metrics</li>
+                    <li>Streamlined vendor management processes, resulting in improved supplier relationships and more competitive pricing agreements</li>
+                    <li>Implemented standardized operating procedures across regions, enhancing consistency and efficiency in supply chain operations</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Earlier Positions -->
+        <div class="mb-6">
+            <div class="bg-white border border-slate-200 rounded-lg shadow-sm p-6 transition-all duration-300 hover:shadow-lg hover:border-blue-500">
+                <h3 class="text-xl font-bold text-slate-700 mb-4">Earlier Positions</h3>
                 
-                <div class="mb-6">
-                    <div class="bg-white border border-slate-200 rounded-lg shadow-sm p-6 transition-all duration-300 hover:shadow-lg hover:border-blue-500">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-xl font-bold text-slate-700">LLM Trainer (Contractor)</h3>
-                            <span class="text-blue-600">Nov 2024 - Present</span>
-                        </div>
-                        <h4 class="text-lg font-semibold mb-2 text-slate-600">Outlier.ai</h4>
-                        <ul class="list-disc pl-5 space-y-2 text-slate-600">
-                            <li>Specialize in training large language models (LLMs) using Reinforcement Learning from Human Feedback (RLHF)</li>
-                            <li>Focus on the Spanish language, ensuring linguistic accuracy, cultural relevance, and contextual appropriateness</li>
-                            <li>Collaborate with AI teams to refine data pipelines, enhance model outputs, and align with project objectives</li>
-                            <li>Contribute to the development of robust AI systems by applying advanced linguistic and machine learning techniques</li>
-                        </ul>
+                <!-- Coyote Logistics Position -->
+                <div class="mb-8">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-lg font-semibold text-slate-700">Carrier Manager - West & South EU</h4>
+                        <span class="text-blue-600">2017-2023</span>
                     </div>
+                    <h5 class="text-md font-medium mb-2 text-slate-600">Coyote Logistics Europe</h5>
+                    <ul class="list-disc pl-5 space-y-2 text-slate-600">
+                        <li>Led a team of 12 carrier representatives across European markets, achieving 125% of carrier growth targets</li>
+                        <li>Implemented an automated tendering system, achieving a 60% automation rate across my regions</li>
+                        <li>Developed and executed strategic carrier partnerships resulting in 20% cost savings on key lanes</li>
+                        <li>Managed a portfolio of 200+ European carriers, ensuring service quality and performance standards</li>
+                    </ul>
                 </div>
 
-                <div class="mb-6">
-                    <div class="bg-white border border-slate-200 rounded-lg shadow-sm p-6 transition-all duration-300 hover:shadow-lg hover:border-blue-500">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-xl font-bold text-slate-700">Senior Supply Chain Manager</h3>
-                            <span class="text-blue-600">Oct 2023 - Present</span>
-                        </div>
-                        <h4 class="text-lg font-semibold mb-2 text-slate-600">GBA Logistics</h4>
-                        <ul class="list-disc pl-5 space-y-2 text-slate-600">
-                            <li>Leading the supply chain department for one of the largest UK-based logistics companies</li>
-                            <li>Overseeing a sales pipeline of over £78M</li>
-                            <li>Managing 6 direct reports across Spain, Poland, and the United Kingdom</li>
-                            <li>Implemented a new RFQ Management process using Power Automate flows</li>
-                            <li>Designed and deployed Supply Chain dashboards using Power BI</li>
-                        </ul>
+                <!-- Tennis Professional Position -->
+                <div class="mb-8">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-lg font-semibold text-slate-700">Tennis Professional</h4>
+                        <span class="text-blue-600">2013-2016</span>
                     </div>
+                    <h5 class="text-md font-medium mb-2 text-slate-600">Riverside Yacht Club</h5>
+                    <ul class="list-disc pl-5 space-y-2 text-slate-600">
+                        <li>Designed and delivered comprehensive tennis programs for 100+ members across all skill levels</li>
+                        <li>Managed junior development programs, leading to 40% increase in youth participation</li>
+                        <li>Organized and executed club tournaments and social events for 200+ participants every summer</li>
+                        <li>Maintained excellent client relationships and achieved 95% lesson retention rate</li>
+                    </ul>
                 </div>
 
-                <div class="mb-6">
-                    <div class="bg-white border border-slate-200 rounded-lg shadow-sm p-6 transition-all duration-300 hover:shadow-lg hover:border-blue-500">
-                        <h3 class="text-xl font-bold text-slate-700 mb-4">Earlier Positions</h3>
-                        <ul class="list-disc pl-5 space-y-2 text-slate-600">
-                            <li>Carrier Team Lead at Coyote Logistics Europe (2017-2021)</li>
-                            <li>Tennis Professional at Riverside Yacht Club (2013-2016)</li>
-                            <li>Programmer at Belsa Technologies Industrials S.L. (2011)</li>
-                        </ul>
+                <!-- Programmer Position -->
+                <div>
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-lg font-semibold text-slate-700">Programmer (apprenticeship)</h4>
+                        <span class="text-blue-600">2011</span>
                     </div>
+                    <h5 class="text-md font-medium mb-2 text-slate-600">Belsa Technologies Industrials S.L.</h5>
+                    <ul class="list-disc pl-5 space-y-2 text-slate-600">
+                        <li>Developed and maintained industrial hardware solutions for manufacturing clients</li>
+                        <li>Collaborated with engineering teams to implement PLC programming solutions</li>
+                        <li>Contributed to the successful deployment of industrial PDAs and barcode scanners</li>
+                    </ul>
                 </div>
             </div>
         </div>
+    </div>
+</div>
 
         <!-- Leadership Profile -->
         <div class="py-12 bg-white">
@@ -247,7 +304,7 @@
 
                 <div class="flex flex-col md:flex-row gap-12 mb-12">
                     <div class="w-full md:w-1/2">
-                        <div class="bg-white border border-slate-200 rounded-lg shadow-sm p-6 mb-8">
+                        <div class="bg-white border border-slate-200 rounded-lg shadow-sm p-6 mb-8 h-[280px] overflow-y-auto">
                             <h3 class="text-xl font-bold mb-4 text-slate-700">Strongest Behaviors</h3>
                             <ul class="list-disc pl-5 space-y-2 text-slate-600">
                                 <li>Driven to protect the company against risk by thoroughly leveraging their background and strictly following "the book."</li>
@@ -269,7 +326,7 @@
 
                 <div class="flex flex-col md:flex-row gap-12 mb-12">
                     <div class="w-full md:w-1/2">
-                        <div class="bg-white border border-slate-200 rounded-lg shadow-sm p-6 mb-8">
+                        <div class="bg-white border border-slate-200 rounded-lg shadow-sm p-6 mb-8 h-[280px] overflow-y-auto">
                             <h3 class="text-xl font-bold mb-4 text-slate-700">Management Style</h3>
                             <ul class="list-disc pl-5 space-y-2 text-slate-600">
                                 <li>Proactive in bringing the team together to complete work by "the book," within accepted standards and policies, and on-time</li>
@@ -292,7 +349,7 @@
 
                 <div class="flex flex-col md:flex-row gap-12 mb-12">
                     <div class="w-full md:w-1/2">
-                        <div class="bg-white border border-slate-200 rounded-lg shadow-sm p-6 mb-8">
+                        <div class="bg-white border border-slate-200 rounded-lg shadow-sm p-6 mb-8 h-[280px] overflow-y-auto">
                             <h3 class="text-xl font-bold mb-4 text-slate-700">Selling Style</h3>
                             <ul class="list-disc pl-5 space-y-2 text-slate-600">
                                 <li>Convivial and persuasive; will utilize effective and stimulating style to build solid, trusted relationships</li>
@@ -314,7 +371,7 @@
 
                 <div class="flex flex-col md:flex-row gap-12 mb-12">
                     <div class="w-full md:w-1/2">
-                        <div class="bg-white border border-slate-200 rounded-lg shadow-sm p-6">
+                        <div class="bg-white border border-slate-200 rounded-lg shadow-sm p-6 h-[280px] overflow-y-auto">
                             <h3 class="text-xl font-bold mb-4 text-slate-700">Management Strategies</h3>
                             <ul class="list-disc pl-5 space-y-2 text-slate-600">
                                 <li>Clear, specific description of the job, with duties, responsibilities, and organizational relationships clearly defined</li>
