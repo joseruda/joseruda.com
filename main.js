@@ -1,5 +1,5 @@
 /* ============================================================
-   joseruda.com — main.js
+   joseruda.com — main.js  v2.0
    1. Nav: transparent → solid on hero exit
    2. Scroll animations: fade-up elements on viewport entry
    ============================================================ */
