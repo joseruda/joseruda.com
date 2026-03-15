@@ -115,7 +115,7 @@ ul { list-style: none; }
   margin-bottom: var(--sp-xl);
 }
 
-/* Teal underline on headings */
+/* Accent underline on headings */
 .section-heading span {
   position: relative;
 }
@@ -286,7 +286,7 @@ ul { list-style: none; }
   animation-delay: 0.3s;
 }
 
-/* Teal glow on name */
+/* Amber glow on name */
 .hero-name-glow {
   color: var(--accent);
   text-shadow: 0 0 40px rgba(245,168,0,0.35), 0 0 80px rgba(245,168,0,0.12);
@@ -649,7 +649,7 @@ ul { list-style: none; }
 }
 .timeline-entry:last-child { padding-bottom: 0; }
 
-/* Teal dot */
+/* Amber dot */
 .timeline-entry::before {
   content: '';
   position: absolute;
