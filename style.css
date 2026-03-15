@@ -526,7 +526,7 @@ ul { list-style: none; }
 
 /* ── Services ────────────────────────────────────────────── */
 #services {
-  background: var(--bg-surface);
+  background: var(--bg);
   position: relative;
   z-index: 1;
 }
@@ -618,7 +618,7 @@ ul { list-style: none; }
 .skill-card {
   background: var(--bg-card);
   border: 1px solid var(--border-soft);
-  border-top: 1px solid var(--accent-mid);
+  border-top: 2px solid var(--accent-mid);
   padding: var(--sp-lg) var(--sp-md);
   border-radius: 2px;
   transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
