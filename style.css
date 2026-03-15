@@ -1,6 +1,6 @@
 /* ============================================================
-   joseruda.com — style.css  v2.0  Direction C: Precision + AI
-   Palette: #060A10 · #0AFFE0 · #E8F4F5
+   joseruda.com — style.css  v3.0  Life Sciences / Veeva Amber
+   Palette: #070D1A · #F5A800 · #EEF2F7
    Fonts:   Instrument Serif (display) · Epilogue (body) · DM Mono (labels)
    ============================================================ */
 
@@ -8,18 +8,18 @@
 
 :root {
   /* Colors */
-  --bg:           #060A10;
-  --bg-surface:   #0C1520;
-  --bg-card:      #0F1A26;
-  --accent:       #0AFFE0;
-  --accent-glow:  rgba(10, 255, 224, 0.18);
-  --accent-dim:   rgba(10, 255, 224, 0.08);
-  --accent-mid:   rgba(10, 255, 224, 0.4);
-  --text:         #E8F4F5;
-  --text-muted:   rgba(232, 244, 245, 0.45);
-  --text-dim:     rgba(232, 244, 245, 0.2);
-  --border:       rgba(10, 255, 224, 0.12);
-  --border-soft:  rgba(232, 244, 245, 0.07);
+  --bg:           #070D1A;
+  --bg-surface:   #0D1829;
+  --bg-card:      #111F35;
+  --accent:       #F5A800;
+  --accent-glow:  rgba(245, 168, 0, 0.15);
+  --accent-dim:   rgba(245, 168, 0, 0.08);
+  --accent-mid:   rgba(245, 168, 0, 0.35);
+  --text:         #EEF2F7;
+  --text-muted:   rgba(238, 242, 247, 0.55);
+  --text-dim:     rgba(238, 242, 247, 0.2);
+  --border:       rgba(245, 168, 0, 0.15);
+  --border-soft:  rgba(238, 242, 247, 0.08);
 
   /* Typography */
   --font-display: 'Instrument Serif', Georgia, serif;
@@ -71,7 +71,7 @@ body::after {
   content: '';
   position: fixed;
   inset: 0;
-  background-image: radial-gradient(circle, rgba(10,255,224,0.15) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(245,168,0,0.12) 1px, transparent 1px);
   background-size: 48px 48px;
   background-position: 24px 24px;
   pointer-events: none;
@@ -152,7 +152,7 @@ ul { list-style: none; }
   border-bottom: 1px solid transparent;
 }
 .site-nav.scrolled {
-  background: rgba(6, 10, 16, 0.92);
+  background: rgba(7, 13, 26, 0.92);
   border-bottom-color: var(--border);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -230,7 +230,7 @@ ul { list-style: none; }
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 70% 60% at 50% 40%, rgba(10,255,224,0.06) 0%, transparent 70%);
+  background: radial-gradient(ellipse 70% 60% at 50% 40%, rgba(245,168,0,0.06) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
 }
@@ -289,7 +289,7 @@ ul { list-style: none; }
 /* Teal glow on name */
 .hero-name-glow {
   color: var(--accent);
-  text-shadow: 0 0 40px rgba(10,255,224,0.4), 0 0 80px rgba(10,255,224,0.15);
+  text-shadow: 0 0 40px rgba(245,168,0,0.35), 0 0 80px rgba(245,168,0,0.12);
 }
 
 .hero-rule {
@@ -420,7 +420,7 @@ ul { list-style: none; }
 }
 .fact-item:hover {
   border-left-color: var(--accent);
-  box-shadow: -4px 0 16px rgba(10,255,224,0.1);
+  box-shadow: -4px 0 16px rgba(245,168,0,0.1);
 }
 
 .fact-label {
@@ -479,7 +479,7 @@ ul { list-style: none; }
 }
 .skill-card:hover {
   border-color: var(--border);
-  box-shadow: 0 0 32px rgba(10,255,224,0.07), 0 4px 24px rgba(0,0,0,0.4);
+  box-shadow: 0 0 32px rgba(245,168,0,0.07), 0 4px 24px rgba(0,0,0,0.4);
   transform: translateY(-3px);
 }
 .skill-card:hover::before { opacity: 1; }
@@ -561,7 +561,7 @@ ul { list-style: none; }
   padding: var(--sp-md) var(--sp-lg);
   border-radius: 2px;
   margin-bottom: var(--sp-lg);
-  box-shadow: 0 0 24px rgba(10,255,224,0.06);
+  box-shadow: 0 0 24px rgba(245,168,0,0.06);
 }
 
 .cert-icon {
@@ -659,7 +659,7 @@ ul { list-style: none; }
   height: 8px;
   border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 0 8px var(--accent-glow), 0 0 16px rgba(10,255,224,0.15);
+  box-shadow: 0 0 8px var(--accent-glow), 0 0 16px rgba(245,168,0,0.15);
 }
 
 .entry-badge {
@@ -706,7 +706,7 @@ ul { list-style: none; }
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 60% 80% at 50% 100%, rgba(10,255,224,0.04) 0%, transparent 60%);
+  background: radial-gradient(ellipse 60% 80% at 50% 100%, rgba(245,168,0,0.04) 0%, transparent 60%);
   pointer-events: none;
 }
 
