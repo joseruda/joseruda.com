@@ -8,6 +8,7 @@
   <meta property="og:description" content="Consultant specialising in regulated content lifecycle platforms and AI-driven workflows for Life Sciences and Biopharma.">
   <meta property="og:url" content="https://joseruda.com/">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://joseruda.com/assets/headshot.jpg">
   <title>Jose Ruda | Consultant, Commercial Content</title>
 
   <!-- Google Fonts: Instrument Serif + Epilogue + DM Mono -->
@@ -15,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Epilogue:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css?v=2.0">
+  <link rel="stylesheet" href="style.css?v=3.0">
 </head>
 <body>
 
@@ -29,7 +30,8 @@
       <nav aria-label="Primary navigation">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Capabilities</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#contact" class="nav-cta">Contact</a></li>
         </ul>
@@ -51,22 +53,33 @@
     <!-- ════════════════════════════════════════════════════ -->
     <section id="hero" aria-label="Introduction">
 
-      <!-- Corner bracket decoration -->
-      <span class="hero-corner hero-corner--tl" aria-hidden="true"></span>
-      <span class="hero-corner hero-corner--tr" aria-hidden="true"></span>
-      <span class="hero-corner hero-corner--bl" aria-hidden="true"></span>
-      <span class="hero-corner hero-corner--br" aria-hidden="true"></span>
+      <div class="hero-inner">
 
-      <div class="hero-content">
-        <span class="hero-industry">Life Sciences &amp; Biopharma</span>
-        <h1 class="hero-name">Jose <span class="hero-name-glow">Ruda</span></h1>
-        <span class="hero-rule" aria-hidden="true"></span>
-        <p class="hero-title">Consultant &nbsp;·&nbsp; Commercial Content</p>
-        <p class="hero-tagline">
-          AI-driven workflows.&nbsp; Regulated content lifecycle.&nbsp; Enterprise-scale implementation.
-        </p>
-        <a href="#contact" class="hero-cta">Get in Touch</a>
-      </div>
+        <!-- Left column -->
+        <div class="hero-left">
+          <span class="hero-industry">Life Sciences &amp; Biopharma</span>
+          <h1 class="hero-name">Jose <span class="hero-name-glow">Ruda</span></h1>
+          <span class="hero-rule" aria-hidden="true"></span>
+          <p class="hero-title">Consultant &nbsp;·&nbsp; Commercial Content</p>
+          <p class="hero-tagline">
+            AI-driven workflows.&nbsp; Regulated content lifecycle.&nbsp; Enterprise-scale implementation.
+          </p>
+          <div class="hero-ctas">
+            <a href="#contact" class="hero-cta hero-cta--primary">Get in Touch</a>
+            <a href="#services" class="hero-cta hero-cta--ghost">View Services</a>
+          </div>
+        </div>
+
+        <!-- Right column — photo -->
+        <div class="hero-right" aria-hidden="true">
+          <div class="hero-photo-frame">
+            <span class="hero-bracket hero-bracket--tl"></span>
+            <span class="hero-bracket hero-bracket--br"></span>
+            <img src="assets/headshot.jpg" alt="Jose Ruda" class="hero-photo" width="462" height="335">
+          </div>
+        </div>
+
+      </div><!-- /hero-inner -->
 
       <div class="scroll-indicator" aria-hidden="true">
         <span class="scroll-line"></span>
@@ -84,21 +97,16 @@
         <div class="about-grid">
           <div class="about-summary fade-up">
             <p>
-              Consultant in commercial content implementation specialising in the
-              <strong style="color:var(--text); font-weight:500">Life Sciences and Biopharma</strong>
-              sector. Strong focus on regulated content lifecycle platforms and AI-driven workflows
-              serving global pharmaceutical and biotechnology organisations.
+              Consultant in commercial content implementation for
+              <strong style="color:var(--text); font-weight:500">Life Sciences and Biopharma</strong>,
+              specialising in Veeva Vault platforms, regulated content lifecycle, and AI-driven
+              workflows for global pharmaceutical and biotechnology organisations.
             </p>
             <p>
-              Over eight years of professional experience across supply chain, logistics, and
-              technology-driven transformation. MBA in Artificial Intelligence with a practical
-              focus on applied AI in enterprise systems and business processes.
-            </p>
-            <p>
-              Proven ability to translate complex regulatory and business requirements into
-              scalable system designs aligned with both global and local market needs.
-              Known for a structured, detail-oriented approach combined with pragmatic
-              problem-solving and delivery focus.
+              A supply chain and operations background spanning eight years across European markets
+              brings a delivery-first, operationally grounded approach to every engagement.
+              MBA in Artificial Intelligence, with a practical focus on applied AI in enterprise
+              systems and regulated content processes.
             </p>
           </div>
 
@@ -106,6 +114,10 @@
             <div class="fact-item">
               <span class="fact-label">Industry</span>
               <span class="fact-value">Life Sciences &amp; Biopharma</span>
+            </div>
+            <div class="fact-item">
+              <span class="fact-label">Specialisation</span>
+              <span class="fact-value">Veeva Vault &nbsp;·&nbsp; Commercial Content</span>
             </div>
             <div class="fact-item">
               <span class="fact-label">Qualification</span>
@@ -116,12 +128,12 @@
               <span class="fact-value">8+ Years</span>
             </div>
             <div class="fact-item">
-              <span class="fact-label">Languages</span>
-              <span class="fact-value">English &middot; Spanish &middot; Catalan</span>
+              <span class="fact-label">Background</span>
+              <span class="fact-value">Supply Chain &amp; Operations</span>
             </div>
             <div class="fact-item">
-              <span class="fact-label">Focus</span>
-              <span class="fact-value">Regulated Content &amp; AI Systems</span>
+              <span class="fact-label">Languages</span>
+              <span class="fact-value">English &nbsp;·&nbsp; Spanish &nbsp;·&nbsp; Catalan</span>
             </div>
           </aside>
         </div>
@@ -129,7 +141,100 @@
     </section>
 
     <!-- ════════════════════════════════════════════════════ -->
-    <!-- Skills                                               -->
+    <!-- Services                                             -->
+    <!-- ════════════════════════════════════════════════════ -->
+    <section id="services">
+      <div class="section-inner">
+        <span class="section-label fade-up">// Services</span>
+        <h2 class="section-heading fade-up">What I <span>Deliver</span></h2>
+
+        <!-- Stagger resets per row (3-col grid): row 1 = 0/0.07/0.14s, row 2 = 0.07/0.14/0.21s -->
+        <div class="services-grid">
+
+          <article class="service-card fade-up">
+            <span class="service-num" aria-hidden="true">01</span>
+            <h3 class="service-title">Veeva Vault Implementation</h3>
+            <p class="service-desc">
+              End-to-end Vault configuration, requirements definition, and functional delivery
+              for PromoMats and Medical Communications platforms. From scoping through go-live.
+            </p>
+            <div class="service-tags">
+              <span>PromoMats</span>
+              <span>MedComms</span>
+            </div>
+          </article>
+
+          <article class="service-card fade-up" style="transition-delay:0.07s">
+            <span class="service-num" aria-hidden="true">02</span>
+            <h3 class="service-title">MLR Process Design</h3>
+            <p class="service-desc">
+              Medical, legal, and regulatory review process architecture, remediation, and
+              optimisation — aligned to global compliance requirements and local market needs.
+            </p>
+            <div class="service-tags">
+              <span>Regulatory</span>
+              <span>Compliance</span>
+            </div>
+          </article>
+
+          <article class="service-card fade-up" style="transition-delay:0.14s">
+            <span class="service-num" aria-hidden="true">03</span>
+            <h3 class="service-title">AI-Driven Content Workflows</h3>
+            <p class="service-desc">
+              Design and implementation of AI-driven and agentic automation workflows for
+              regulated commercial content operations at enterprise scale.
+            </p>
+            <div class="service-tags">
+              <span>Automation</span>
+              <span>Agentic</span>
+            </div>
+          </article>
+
+          <article class="service-card fade-up" style="transition-delay:0.07s">
+            <span class="service-num" aria-hidden="true">04</span>
+            <h3 class="service-title">Scientific Communication Platform</h3>
+            <p class="service-desc">
+              SCP digitisation initiatives from process analysis through functional validation,
+              delivering structured medical content management across core biopharma markets.
+            </p>
+            <div class="service-tags">
+              <span>SCP</span>
+              <span>Medical Content</span>
+            </div>
+          </article>
+
+          <article class="service-card fade-up" style="transition-delay:0.14s">
+            <span class="service-num" aria-hidden="true">05</span>
+            <h3 class="service-title">API &amp; System Integrations</h3>
+            <p class="service-desc">
+              Design and functional support for API-based integrations connecting Vault
+              platforms to downstream systems and third-party services.
+            </p>
+            <div class="service-tags">
+              <span>Vault API</span>
+              <span>Downstream Systems</span>
+            </div>
+          </article>
+
+          <article class="service-card fade-up" style="transition-delay:0.21s">
+            <span class="service-num" aria-hidden="true">06</span>
+            <h3 class="service-title">Training &amp; Change Management</h3>
+            <p class="service-desc">
+              Training programme design, end-user enablement, and adoption support from
+              inception through go-live and beyond.
+            </p>
+            <div class="service-tags">
+              <span>Enablement</span>
+              <span>Go-live</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════ -->
+    <!-- Capabilities                                         -->
     <!-- ════════════════════════════════════════════════════ -->
     <section id="skills">
       <div class="section-inner">
@@ -153,7 +258,7 @@
 
         <div class="skills-grid">
 
-          <!-- AI & Agentic -->
+          <!-- Veeva & Life Sciences (5 cards) -->
           <article class="skill-card fade-up">
             <div class="skill-icon-wrap" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -170,15 +275,14 @@
             </div>
           </article>
 
-          <!-- MLR -->
-          <article class="skill-card fade-up">
+          <article class="skill-card fade-up" style="transition-delay:0.07s">
             <div class="skill-icon-wrap" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
               </svg>
             </div>
-            <h3 class="skill-name">MLR Process Design &amp; Optimization</h3>
+            <h3 class="skill-name">MLR Process Design &amp; Optimisation</h3>
             <p class="skill-desc">End-to-end medical, legal, and regulatory review process architecture, remediation, and optimisation for Life Sciences.</p>
             <div class="skill-tags">
               <span>Regulatory</span>
@@ -186,56 +290,7 @@
             </div>
           </article>
 
-          <!-- System Implementations -->
-          <article class="skill-card fade-up">
-            <div class="skill-icon-wrap" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5.25 14.25h13.5m-13.5 0a3 3 0 01-3-3m3 3a3 3 0 100 6h13.5a3 3 0 100-6m-16.5-3a3 3 0 013-3h13.5a3 3 0 013 3m-19.5 0a4.5 4.5 0 01.9-2.7L5.737 5.1a3.375 3.375 0 012.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 01.9 2.7m0 0a3 3 0 01-3 3m0 3h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008zm-3 6h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008z"/>
-              </svg>
-            </div>
-            <h3 class="skill-name">System Implementations</h3>
-            <p class="skill-desc">Full-cycle platform implementations — requirements, configuration, validation, training, and go-live support for enterprise systems.</p>
-            <div class="skill-tags">
-              <span>Configuration</span>
-              <span>Go-live</span>
-            </div>
-          </article>
-
-          <!-- API Solutions -->
-          <article class="skill-card fade-up">
-            <div class="skill-icon-wrap" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"/>
-              </svg>
-            </div>
-            <h3 class="skill-name">API Solutions &amp; Integrations</h3>
-            <p class="skill-desc">Designing and supporting API-based integrations between content platforms, downstream systems, and third-party services.</p>
-            <div class="skill-tags">
-              <span>Integrations</span>
-              <span>APIs</span>
-            </div>
-          </article>
-
-          <!-- SCP -->
-          <article class="skill-card fade-up">
-            <div class="skill-icon-wrap" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/>
-              </svg>
-            </div>
-            <h3 class="skill-name">Scientific Communication Platform Digitization</h3>
-            <p class="skill-desc">Leading SCP digitization initiatives across core biopharma markets, from process analysis through functional validation.</p>
-            <div class="skill-tags">
-              <span>SCP</span>
-              <span>Medical Content</span>
-            </div>
-          </article>
-
-          <!-- Claims & MLM -->
-          <article class="skill-card fade-up">
+          <article class="skill-card fade-up" style="transition-delay:0.14s">
             <div class="skill-icon-wrap" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -247,6 +302,54 @@
             <div class="skill-tags">
               <span>Claims</span>
               <span>PromoMats</span>
+            </div>
+          </article>
+
+          <article class="skill-card fade-up" style="transition-delay:0.07s">
+            <div class="skill-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/>
+              </svg>
+            </div>
+            <h3 class="skill-name">SCP Digitisation</h3>
+            <p class="skill-desc">Leading SCP digitisation initiatives across core biopharma markets, from process analysis through functional validation.</p>
+            <div class="skill-tags">
+              <span>SCP</span>
+              <span>Medical Content</span>
+            </div>
+          </article>
+
+          <article class="skill-card fade-up" style="transition-delay:0.14s">
+            <div class="skill-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5.25 14.25h13.5m-13.5 0a3 3 0 01-3-3m3 3a3 3 0 100 6h13.5a3 3 0 100-6m-16.5-3a3 3 0 013-3h13.5a3 3 0 013 3m-19.5 0a4.5 4.5 0 01.9-2.7L5.737 5.1a3.375 3.375 0 012.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 01.9 2.7m0 0a3 3 0 01-3 3m0 3h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008zm-3 6h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008z"/>
+              </svg>
+            </div>
+            <h3 class="skill-name">System Configuration &amp; Validation</h3>
+            <p class="skill-desc">Full-cycle platform configuration, environment validation, and go-live support for enterprise Vault implementations.</p>
+            <div class="skill-tags">
+              <span>Configuration</span>
+              <span>Go-live</span>
+            </div>
+          </article>
+
+          <!-- Foundation card (15% — visually secondary) -->
+          <article class="skill-card skill-card--foundation fade-up" style="transition-delay:0.21s">
+            <div class="skill-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"/>
+              </svg>
+            </div>
+            <span class="skill-foundation-label">Foundation</span>
+            <h3 class="skill-name">Operations &amp; Process Transformation</h3>
+            <p class="skill-desc">Eight years leading commercial operations across European logistics — team management, cross-border execution, and process automation.</p>
+            <div class="skill-tags">
+              <span>Supply Chain</span>
+              <span>Team Leadership</span>
+              <span>Power Automate</span>
             </div>
           </article>
 
@@ -268,44 +371,52 @@
             <span class="entry-badge">Current</span>
             <h3 class="entry-role">Functional Analyst — AI-Driven Content Implementation</h3>
             <p class="entry-desc">
-              Contributing to requirements definition, functional design, and alignment of AI
-              capabilities with regulated content business processes within a global biopharma
-              commercial content programme.
+              Aligning AI capabilities with regulated commercial content processes at global scale
+              within a major biopharma programme. Responsibilities span requirements definition,
+              functional design, and cross-functional delivery across a complex, multi-market
+              implementation.
             </p>
           </article>
 
           <article class="timeline-entry fade-up">
-            <h3 class="entry-role">Functional Analyst — Medical Content Migration &amp; SCP Digitization</h3>
+            <h3 class="entry-role">Functional Analyst — Medical Content Migration &amp; SCP Digitisation</h3>
             <p class="entry-desc">
-              Supported Phases 0 and 1 of a large-scale medical content migration and Scientific
-              Communication Platform digitization initiative across core Life Sciences markets.
-              Delivered process analysis, requirements tracking, and functional validation.
+              Led cross-market delivery across Phases 0 and 1 of a large-scale medical content
+              migration and SCP digitisation initiative. Delivered process analysis, requirements
+              tracking, and functional validation across core Life Sciences markets.
             </p>
           </article>
 
           <article class="timeline-entry fade-up">
             <h3 class="entry-role">Configuration Analyst — EU Digital Publishing Rollout</h3>
             <p class="entry-desc">
-              Supported configuration enabling compliant digital content distribution across
-              multiple European markets as part of a multi-country biopharma publishing
-              infrastructure rollout.
-            </p>
-          </article>
-
-          <article class="timeline-entry fade-up">
-            <h3 class="entry-role">Configuration Analyst — Cloning &amp; Migration Project</h3>
-            <p class="entry-desc">
-              Performed configuration review, comparison analysis, and migration support to
-              ensure system parity and stability across environments.
+              Enabled compliant digital content distribution across multiple European markets
+              as part of a multi-country biopharma publishing infrastructure programme. Delivered
+              configuration and validation to support compliant, scalable distribution.
             </p>
           </article>
 
           <article class="timeline-entry fade-up">
             <h3 class="entry-role">Implementation Consultant &amp; Training Lead — Essentials Implementation</h3>
             <p class="entry-desc">
-              Combined full configuration responsibilities with training lead ownership on an
-              end-to-end implementation. Delivered end-user enablement, adoption support,
-              and training programme design from inception through go-live.
+              Full-cycle ownership from configuration through go-live. Combined platform
+              configuration with training programme design and end-user adoption — delivering
+              full enablement from inception across all workstreams.
+            </p>
+          </article>
+
+          <!-- Amber divider before pre-Veeva section -->
+          <div class="timeline-divider fade-up" aria-hidden="true"></div>
+
+          <!-- Pre-Veeva consolidated entry -->
+          <article class="timeline-entry timeline-entry--foundation fade-up">
+            <h3 class="entry-role">Operations &amp; Commercial Leadership — <em>Prior to Life Sciences</em></h3>
+            <p class="entry-desc">
+              Eight years leading commercial operations across European logistics — managing a
+              €78M pipeline, international teams across Spain, Poland, and the UK, and delivering
+              process automation that cut response times by 40%. A foundation in data-driven
+              operations, team management, and cross-border execution that informs a
+              delivery-first consulting approach.
             </p>
           </article>
 
@@ -321,7 +432,7 @@
         <span class="section-label fade-up">// Contact</span>
         <h2 class="section-heading fade-up">Let&rsquo;s <span>Connect</span></h2>
         <p class="contact-intro fade-up">
-          Open to consulting engagements in Life Sciences &amp; Biopharma.
+          Get in touch via email or LinkedIn.
         </p>
 
         <div class="contact-links fade-up" style="transition-delay:0.1s">
@@ -354,6 +465,6 @@
 
   </main>
 
-  <script src="main.js?v=2.0"></script>
+  <script src="main.js?v=3.0"></script>
 </body>
 </html>
