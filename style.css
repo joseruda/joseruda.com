@@ -393,9 +393,8 @@ ul { list-style: none; }
   left: -8px;
   border-width: 2px 0 0 2px;
 }
-/* 56px = cert badge height (approx 2 lines × line-height + padding) */
 .hero-bracket--br {
-  bottom: 56px;
+  bottom: -8px;
   right: -8px;
   border-width: 0 2px 2px 0;
 }
