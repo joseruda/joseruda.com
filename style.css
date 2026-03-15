@@ -869,6 +869,27 @@ ul { list-style: none; }
   max-width: 620px;
 }
 
+/* Timeline divider — separates Veeva from pre-Veeva */
+.timeline-divider {
+  margin: var(--sp-xl) 0 var(--sp-xl) calc(-2.5rem - 2rem);
+  height: 1px;
+  background: linear-gradient(to right, var(--accent-mid), transparent);
+}
+
+/* Foundation entry — visually secondary */
+.timeline-entry--foundation .entry-role {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+.timeline-entry--foundation .entry-desc {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+.timeline-entry--foundation::before {
+  background: var(--text-dim);
+  box-shadow: none;
+}
+
 /* ── Contact ──────────────────────────────────────────────── */
 #contact {
   background: var(--bg);
