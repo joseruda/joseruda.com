@@ -393,6 +393,7 @@ ul { list-style: none; }
   left: -8px;
   border-width: 2px 0 0 2px;
 }
+/* 56px = cert badge height (approx 2 lines × line-height + padding) */
 .hero-bracket--br {
   bottom: 56px;
   right: -8px;
@@ -876,7 +877,7 @@ ul { list-style: none; }
   html { scroll-behavior: auto; }
   .fade-up { opacity: 1 !important; transform: none !important; transition: none !important; }
   .hero-name, .hero-industry, .hero-rule, .hero-title,
-  .hero-tagline, .hero-cta, .scroll-indicator, .hero-corner {
+  .hero-tagline, .hero-cta, .scroll-indicator {
     animation: none !important; opacity: 1 !important; transform: none !important;
   }
   .hero-inner, .hero-left, .hero-right, .hero-photo-frame,
